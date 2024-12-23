@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const docsLink = document.getElementById('notes-link');
   const installationLink = document.getElementById('installation-link');
   const bookmarksLink = document.getElementById('bookmarks-link');
+  const tokensLink = document.getElementById('token-link');
 
   // Handle Calendar link
   calendarLink.addEventListener('click', (e) => {
@@ -104,7 +105,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle Bookmark link
     bookmarksLink.addEventListener('click', (e) => {
     e.preventDefault();  // Prevent the default anchor link action
-    window.open(installationLink.href, '_blank');  // Open link in a new tab
+    window.open(bookmarksLink.href, '_blank');  // Open link in a new tab
+  });
+
+   // Handle Token link
+    tokensLink.addEventListener('click', (e) => {
+    e.preventDefault();  // Prevent the default anchor link action
+    window.open(tokensLink.href, '_blank');  // Open link in a new tab
   });
 });
 
